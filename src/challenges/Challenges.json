@@ -18,5 +18,25 @@
       "difficult": "3",
       "image_url":  ""
     }
+  ],
+  "love_pass": [
+    {
+      "title":"depistage",
+      "description":"pour ce defis c'est très simple vous devez vous faire depister pour obtenir votre love pass !",
+      "difficult": "1",
+      "image_url": ""
+    },
+    {
+      "title":"scann",
+      "description":"aujourd'hui vous etes mis au defis de réaliser votre premier scann de partenaires.",
+      "difficult": "2",
+      "image_url": ""
+    },
+    {
+      "title":"conservation",
+      "description":"pour valider ce defis vous devez faire preuve de la possession de ce pass depuis plus de 6 mois.",
+      "difficult": "3",
+      "image_url": ""
+    }
   ]
 }
