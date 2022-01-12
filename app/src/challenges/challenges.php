@@ -11,7 +11,7 @@
 <?php include("../header/header.html") ?>
 
 <body>
-    <div style="overflow-y: scroll; height:400px;">
+    <div style="overflow-y: scroll;">
         <?php
         $ressource = fopen('Challenges.json', 'r');
         $content= fread($ressource, filesize('Challenges.json'));
@@ -37,7 +37,7 @@
                     break;
             }
             echo "</div></td>";
-            echo "</tr><tr>" . $value['description'] . "</table></div>";
+            echo "</tr><tr>" . $value['description'] . "</tr></table></div>";
         }
         ?>
     </div>
