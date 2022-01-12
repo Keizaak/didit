@@ -15,7 +15,7 @@
         $values=json_decode($content, true);
         foreach ($values['communities'] as &$value) {
             echo "<div style=\"background-color: #ffc600; margin-bottom: 15px;\"><table><tr>";
-            echo "<td><img class='img rounded custom-title-didit' src='".$value['image_url']."'></td>";
+            echo "<td><img style='border-radius: 50%;' class='img rounded custom-title-didit' src='".$value['image_url']."'></td>";
             echo "<td><a href=../challenges/challenges.php?community=".$value['title'].">".$value['title']."<br>".$value['description']."</a><br></td>";
             echo "</tr></table></div>";
         }
