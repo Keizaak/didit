@@ -1,0 +1,22 @@
+{
+  "challenges":[
+    {
+      "title":"achat",
+      "description":"pour ce defis, vous devez acheter plusieurs kilos de spaghetti tout en profitant des reductions offertes par le pass'Tafarisme",
+      "difficult": "1",
+      "image_url": ""
+    },
+    {
+      "title":"cuisine",
+      "description":"pour ce defis, vous devez cuisiner un plat a base de pâtes. Ce plat ce doit d'etre original.",
+      "difficult": "2",
+      "image_url":  ""
+    },
+    {
+      "title":"grades",
+      "description":"adorateurs des pates pour ce defis exceptionnel vous devez atteindre le grade de linguine avec votre passe'Tafarisme. Ce defis n'est pas a la portée de tous.",
+      "difficult": "3",
+      "image_url":  ""
+    }
+  ]
+}
