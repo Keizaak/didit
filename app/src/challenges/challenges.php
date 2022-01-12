@@ -36,8 +36,9 @@
                     echo "☆☆☆";
                     break;
             }
-            echo "</div></td>";
-            echo "</tr><tr>" . $value['description'] . "</tr></table></div>";
+            echo "</div></td></tr>";
+
+            echo "<tr><td>" . $value['description'] . "</td></tr></table></div>";
         }
         ?>
     </div>
