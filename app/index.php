@@ -1,1 +1,1 @@
-<?php header("Location: communities/communities.php") ?>
+<?php header("Location: src/communities/communities.php") ?>
