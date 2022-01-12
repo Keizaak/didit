@@ -17,6 +17,7 @@
             $content= fread($ressource, filesize('Communities.json'));
             $values=json_decode($content, true);
             foreach ($values['communities'] as &$value) {
+                echo "<img class='img rounded custom-title-didit' src='".$value['title']."'><br>";
                 echo "<a href=../challenges/challenges.php?community=".$value['title'].">".$value['title']."<br>".$value['description']."</a><br>";
             }
             ?>
