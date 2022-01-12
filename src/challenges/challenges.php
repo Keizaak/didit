@@ -22,22 +22,19 @@
         foreach ($values[$_GET["community"]] as &$value) {
             switch ($value['difficult']) {
                 case 1:
-                    echo "<a href=../challenges/challenges.php?community=".$value['title'].">".$value['title']."<br>".$value['description']."★☆☆"."<br>" ."</a>";
+                    echo "<a href=../challenges/challenges.php?community=" . $value['title'] . ">" . $value['title'] . "<br>" . $value['description'] . "★☆☆" . "<br>" . "</a>";
                     break;
                 case 2:
-                    echo "<a href=../challenges/challenges.php?community=".$value['title'].">".$value['title']."<br>".$value['description']."★★☆"."<br>"."</a>";
+                    echo "<a href=../challenges/challenges.php?community=" . $value['title'] . ">" . $value['title'] . "<br>" . $value['description'] . "★★☆" . "<br>" . "</a>";
                     break;
 
                 case 3:
-                    echo "<a href=../challenges/challenges.php?community=".$value['title'].">".$value['title']."<br>".$value['description']."★★★"."<br>"."</a>";
+                    echo "<a href=../challenges/challenges.php?community=" . $value['title'] . ">" . $value['title'] . "<br>" . $value['description'] . "★★★" . "<br>" . "</a>";
                     break;
                 default:
-                    echo "<a href=../challenges/challenges.php?community=".$value['title'].">".$value['title']."<br>".$value['description']."☆☆☆"."<br>"."</a>";
+                    echo "<a href=../challenges/challenges.php?community=" . $value['title'] . ">" . $value['title'] . "<br>" . $value['description'] . "☆☆☆" . "<br>" . "</a>";
                     break;
-                break;
-}
-
-
+            }
         }
         ?>
 
