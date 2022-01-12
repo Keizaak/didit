@@ -1,1 +1,1 @@
-<?php redirect("communities/communities.php") ?>
+<?php header("Location: communities/communities.php") ?>
