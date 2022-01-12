@@ -20,7 +20,7 @@
         
         foreach ($values[$_GET["community"]] as &$value) {
             echo "<div style=\"background-color: #ffc600; margin-bottom: 15px; \"><table><tr>";
-            echo "<td><a href=# >" . $value['title'] . "</a></td><td><div>";
+            echo "<td><a href=# style='text-decoration : None;'><div style='font-weight: bold; margin-top: 20px; margin-bottom: 40px;'>" . $value['title'] . "</div></a></td><td><div>";
             switch ($value['difficult']) {
                 case 1:
                     echo "★☆☆";
