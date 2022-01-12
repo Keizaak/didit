@@ -3,11 +3,11 @@
     {
       "title":"pass_Tafarisme",
       "description":"Si tu es fan de pâtes, ta place est ici !",
-      "image_url":  ""},
+      "image_url":  "../../img/tafarism.png"},
     {
       "title":"love_pass",
       "description":"Si tu redoutes les MST, tu trouveras toutes les infos que tu cherches !",
-      "image_url":  ""
+      "image_url":  "../../img/love.png"
     }
   ]
 }
