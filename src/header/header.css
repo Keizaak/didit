@@ -18,10 +18,24 @@ header {
     background-color: #140067;
 }
 
+.navbar-brand {
+    height: 120px;
+    width: 300px;
+}
+
+.custom-title-didit {
+    height: 120px;
+    width: 300px;
+}
+
+
 .navbar-toggler {
     border: none;
+
 }
 
 .custom-toggler .navbar-toggler-icon {
     background-image: url("../../img/Menu_button.svg");
 }
+
+
