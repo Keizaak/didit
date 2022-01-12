@@ -1,13 +1,13 @@
 {
   "pass_Tafarisme":[
     {
-      "title":"achat",
+      "title":"Achat",
       "description":"pour ce defis, vous devez acheter plusieurs kilos de spaghettis tout en profitant des reductions offertes par le pass'Tafarisme",
       "difficult": "1",
       "image_url": ""
     },
     {
-      "title":"cuisine",
+      "title":"Cuisine",
       "description":"pour ce defis, vous devez cuisiner un plat a base de pâtes. Ce plat ce doit d'etre original.",
       "difficult": "2",
       "image_url":  ""
