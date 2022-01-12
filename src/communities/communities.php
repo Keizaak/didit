@@ -18,7 +18,7 @@
         $content= fread($ressource, filesize('Communities.json'));
         $values=json_decode($content, true);
         foreach ($values['communities'] as &$value) {
-echo "<a href=../community/community.php?community=".$value['title'].">".$value['title']."<br>".$value['description']."</a><br>";
+echo "<a href=../challenges/challenges.php?community=".$value['title'].">".$value['title']."<br>".$value['description']."</a><br>";
             //echo '<div onclick="post(\'https://google.com\', {name: {\''. $value["title"].'\'})" style="cursor: pointer;" >'. $value["title"].'<br>'.$value["description"].'</div>';
 
 
