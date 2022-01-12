@@ -11,7 +11,7 @@
     
     
     <table>
-        <div style="overflow-y: scroll; height:400px;">
+        <div style="overflow-y: scroll;">
             <?php
             $ressource = fopen('Communities.json', 'r');
             $content= fread($ressource, filesize('Communities.json'));
