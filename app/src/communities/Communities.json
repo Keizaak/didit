@@ -1,11 +1,11 @@
 {
   "communities":[
     {
-      "title":"pass_Tafarisme",
+      "title":"Tafarisme Pass",
       "description":"Si tu es fan de pâtes, ta place est ici !",
       "image_url":  "../../img/tafarism.png"},
     {
-      "title":"love_pass",
+      "title":"Love Pass",
       "description":"Si tu redoutes les MST, tu trouveras toutes les infos que tu cherches !",
       "image_url":  "../../img/love.png"
     }
