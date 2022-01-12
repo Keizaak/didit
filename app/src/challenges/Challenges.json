@@ -13,7 +13,7 @@
       "image_url":  ""
     },
     {
-      "title":"grades",
+      "title":"Grades",
       "description":"adorateurs des pates pour ce defis exceptionnel vous devez atteindre le grade de linguine avec votre passe'Tafarisme. Ce defis n'est pas a la portée de tous.",
       "difficult": "3",
       "image_url":  ""
@@ -21,19 +21,19 @@
   ],
   "love_pass": [
     {
-      "title":"depistage",
+      "title":"Depistage",
       "description":"pour ce defis c'est très simple vous devez vous faire depister pour obtenir votre love pass !",
       "difficult": "1",
       "image_url": ""
     },
     {
-      "title":"scann",
+      "title":"Scan",
       "description":"aujourd'hui vous etes mis au defis de réaliser votre premier scann de partenaires.",
       "difficult": "2",
       "image_url": ""
     },
     {
-      "title":"conservation",
+      "title":"Conservation",
       "description":"pour valider ce defis vous devez faire preuve de la possession de ce pass depuis plus de 6 mois.",
       "difficult": "3",
       "image_url": ""
