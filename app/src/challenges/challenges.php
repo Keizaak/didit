@@ -17,8 +17,9 @@
         $content= fread($ressource, filesize('Challenges.json'));
         $values=json_decode($content, true);
 
-        echo "<div style=\"background-color: #ffc600; margin-bottom: 15px; \"><table><tr>";
+        
         foreach ($values[$_GET["community"]] as &$value) {
+            echo "<div style=\"background-color: #ffc600; margin-bottom: 15px; \"><table><tr>";
             echo "<td><a href=# >" . $value['title'] . "</a></td><td><div>";
             switch ($value['difficult']) {
                 case 1:
@@ -36,8 +37,8 @@
                     break;
             }
             echo "</div></td>";
+            echo "</tr><tr>" . $value['description'] . "</table></div>";
         }
-        echo "</tr><tr>" . $value['description'] . "</table></div>";
         ?>
     </div>
 </body>
