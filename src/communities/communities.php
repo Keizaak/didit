@@ -6,7 +6,7 @@
 
     <title>DidIt</title>
 </head>
-<?php include("header/header.html") ?>
+<?php include("../header/header.html") ?>
 <body>
     
     
