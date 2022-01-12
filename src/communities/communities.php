@@ -6,11 +6,9 @@
 
     <title>DidIt</title>
 </head>
-<header>
-    <h2 style="text-align: center;">Community list</h2>
-</header>
+<?php include("header/header.html") ?>
 <body>
-    <?php include("header/header.html") ?>
+    
     
     <table>
         <div style="overflow-y: scroll; height:400px;">
