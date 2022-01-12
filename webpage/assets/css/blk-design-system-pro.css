@@ -654,6 +654,30 @@ pre code {
   top: 30px;
 }
 
+.community-list {
+    list-style: none;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.community-list li {
+    padding-top: 20px;
+}
+
+.community-list li img {
+    margin-right: 10px;
+}
+
+.community-logo {
+    width: 50px;
+}
+
+.didit-letsgo {
+  line-height: 1.8em;
+  font-size: 1em;
+  font-weight: 400;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -8345,6 +8369,10 @@ button.bg-darker:focus {
 
 .m-1 {
   margin: 0.25rem !important;
+}
+
+.mt-08 {
+  margin-top: 0.08rem !important;
 }
 
 .mt-1,

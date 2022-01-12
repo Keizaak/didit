@@ -1,0 +1,22 @@
+/*
+HEXA COLORS:
+Blue: #140067
+Yellow: #ffc600
+*/
+
+body {
+    font-family: "Roboto";
+    text-align: right;
+}
+
+.navbar {
+    background-color: #140067;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("../../img/Menu_button.svg");
+}
