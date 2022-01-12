@@ -14,8 +14,8 @@
         $content= fread($ressource, filesize('Communities.json'));
         $values=json_decode($content, true);
         foreach ($values['communities'] as &$value) {
-            echo "<div style=\"background-color: #ffc600; margin-bottom: 15px; height: 300px;\"><table><tr>";
-            echo "<td><img style='border-radius: 50% !important; height: 250px !important; width: 250px !important;' class='img rounded custom-title-didit' src='".$value['image_url']."'></td>";
+            echo "<div style=\"background-color: #ffc600; margin-bottom: 15px; height: 300px; margin-left: 15px;\"><table><tr>";
+            echo "<td style='width: 300px;'><img style='border-radius: 50% !important; height: 250px !important; width: 250px !important;' class='img rounded custom-title-didit' src='".$value['image_url']."'></td>";
             echo "<td><a href=../challenges/challenges.php?community=".$value['title'].">".$value['title']."<br>".$value['description']."</a><br></td>";
             echo "</tr></table></div>";
         }
