@@ -11,36 +11,35 @@
 <?php include("../header/header.html") ?>
 
 <body>
-<table>
     <div style="overflow-y: scroll; height:400px;">
         <?php
         $ressource = fopen('Challenges.json', 'r');
         $content= fread($ressource, filesize('Challenges.json'));
         $values=json_decode($content, true);
 
+        echo "<div style=\"background-color: #ffc600; margin-bottom: 15px; \"><table><tr>";
         foreach ($values[$_GET["community"]] as &$value) {
+            echo "<td><a href=# >" . $value['title'] . "</a></td><td><div>";
             switch ($value['difficult']) {
                 case 1:
-                    echo "<a href=../challenges/challenges.php?community=" . $value['title'] . ">" . $value['title'] . "<br>" . $value['description'] . "★☆☆" . "<br>" . "</a>";
+                    echo "★☆☆";
                     break;
                 case 2:
-                    echo "<a href=../challenges/challenges.php?community=" . $value['title'] . ">" . $value['title'] . "<br>" . $value['description'] . "★★☆" . "<br>" . "</a>";
+                    echo "★★☆";
                     break;
 
                 case 3:
-                    echo "<a href=../challenges/challenges.php?community=" . $value['title'] . ">" . $value['title'] . "<br>" . $value['description'] . "★★★" . "<br>" . "</a>";
+                    echo "★★★";
                     break;
                 default:
-                    echo "<a href=../challenges/challenges.php?community=" . $value['title'] . ">" . $value['title'] . "<br>" . $value['description'] . "☆☆☆" . "<br>" . "</a>";
+                    echo "☆☆☆";
                     break;
             }
+            echo "</div></td>";
         }
+        echo "</tr><tr>" . $value['description'] . "</table></div>";
         ?>
-
-
     </div>
-</table>
-
 </body>
 
 </html>
