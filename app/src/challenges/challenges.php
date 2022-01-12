@@ -7,9 +7,8 @@
 
     <title>DidIt</title>
 </head>
-<header>
-    <h2 style="text-align: center;">challenge list</h2>
-</header>
+
+<?php include("../header/header.html") ?>
 
 <body>
 <table>
