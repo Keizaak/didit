@@ -631,6 +631,10 @@ pre code {
   z-index: 2;
 }
 
+.custom-title-didit-footer {
+  width: 100%;
+}
+
 .custom-didit-subtitle {
   position: absolute;
   left: 40% !important;
@@ -676,6 +680,10 @@ pre code {
   line-height: 1.8em;
   font-size: 1em;
   font-weight: 400;
+}
+
+.mb-10 {
+    margin-bottom: 10rem !important;
 }
 
 @media (min-width: 576px) {
