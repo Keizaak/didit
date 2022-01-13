@@ -38,5 +38,13 @@
       "difficult": "3",
       "image_url": "../../img/default_defi.png"
     }
+  ],
+  "Dome": [
+    {
+      "title":"skate",
+      "description":"realisation d'une performance en skateboard devant le dôme !",
+      "difficult": "1",
+      "image_url": "../../img/default_defi.png"
+    }
   ]
 }
