@@ -39,12 +39,9 @@
 
             echo "<tr><td colspan=\"2\">" . $value['description'] . "</td></tr></table></div>";
         }
-        echo "</div></td></tr>";
 
-        echo "<tr><td>" . $value['description'] . "</td></tr></table></div>";
-    }
-    ?>
-</div>
+        ?>
+    </div>
 
 <footer class="bg-transparent">
     <div class="container text-center">
