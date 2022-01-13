@@ -38,7 +38,7 @@
                                         foreach ($value["list"] as &$url) {
                                             if (strpos($url["url"], "MP4") !== false) { ?>
                                                 <div class="d-block mb-4 h-100">
-                                                    <iframe width="100%" height="600px" src="<?php echo $url["url"] ?>" frameborder="0" allowfullscreen></iframe>
+                                                    <iframe style="max-height: 3000px;" width="100%" src="<?php echo $url["url"] ?>" frameborder="0" allowfullscreen></iframe>
                                                 </div>
                                             <?php } else { ?>
                                                 <div class="image-tile d-block mb-4 h-100">
