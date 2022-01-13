@@ -37,12 +37,14 @@
                                 foreach ($values[$_GET["community"]] as &$value) {
                                     if ($value["title"] == $_GET["challenge"]) {
                                         foreach ($value["list"] as &$url) { ?>
-                                <a href="<?php echo $url["url"] ?>" class="image-tile" data-abc="true">
-                                    <img src="<?php echo $url["url"] ?>" alt="image small">
-                                    <div class="demo-gallery-poster">
-                                        <!--<img src="http://www.urbanui.com/fily/template/images/lightbox/play-button.png" alt="image">-->
-                                    </div>
-                                </a>
+                                                <div class="">
+                                                    <a href="<?php echo $url["url"] ?>" class="image-tile d-block mb-4 h-100" data-abc="true">
+                                                        <img class="col" src="<?php echo $url["url"] ?>" alt="image small" style="width: 100%;">
+                                                        <div class="demo-gallery-poster">
+                                                            <!--<img src="http://www.urbanui.com/fily/template/images/lightbox/play-button.png" alt="image">-->
+                                                        </div>
+                                                    </a>
+                                                </div>
                                         <?php
                                         }
                                     }
