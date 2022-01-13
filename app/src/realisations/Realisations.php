@@ -4,20 +4,23 @@
     <link href="Realisations.css" rel="stylesheet">
     <title>DidIt</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+
 </head>
 
 <?php include("../header/header.html") ?>
 
 <body>
-    <div class="photo-gallery">
-        <div class="container">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <div class="lightbox-gallery">
+        <div style="max-width: 3000px !important;" class="container">
             <div class="intro">
-                <h2 class="text-center"><?php echo $_GET["name"] ?></h2>
-                <p class="text-center"><?php echo $_GET["challenge"] ?></p>
+                <h2 class="text-center"><?php echo $_GET["challenge"] ?></h2>
+                <p class="text-center"><?php echo $_GET["name"] ?></p>
             </div>
+
+            <hr class="mt-2 mb-5">
+
             <div class="row photos">
 
         <?php
@@ -38,9 +41,6 @@
             </div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 </body>
 
 </html>
