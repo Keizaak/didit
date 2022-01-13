@@ -1,5 +1,5 @@
 {
-  "pass_Tafarisme": [
+  "pass_tafarisme": [
     {
       "title": "Achat",
       "list": [
@@ -50,7 +50,7 @@
       ]
     }
   ],
-  "lovepass": [
+  "love_pass": [
     {
       "title": "Depistage",
       "list": [
@@ -74,7 +74,7 @@
       ]
     }
   ],
-  "Dome": [
+  "dome": [
     {
       "title": "Skate",
       "list": [
