@@ -1,0 +1,21 @@
+#container_community {
+    margin-top: 5%;
+}
+
+#box_community {
+    overflow-y: scroll;
+    background-color: #ffc600;
+}
+
+p {
+    font-size: 35px;
+}
+
+a {
+    color: #140067;
+    text-decoration: none;
+}
+
+#img_community {
+    border-radius: 50%;
+}
