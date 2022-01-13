@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <link href="challenges.css" rel="stylesheet">
-
     <title>DidIt</title>
 </head>
 
@@ -44,7 +43,9 @@
 
 <footer class="bg-transparent">
     <div class="container text-center">
-        <a id="plus_button" class="btn btn-warning btn-lg" role="button" href="add_challenge.php?community=<?php echo $_GET["community"]?>">+</a>
+        <a id="plus_button" class="btn btn-warning btn-lg" role="button" href="add_challenge.php?community=<?php echo $_GET["community"]?>">
+            <i class="fa fa-plus fa-align-center"></i>
+        </a>
     </div>
 </footer>
 
