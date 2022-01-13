@@ -35,7 +35,7 @@
                 foreach ($value["list"] as $url) {
                     echo "<div class='row'>";
 
-                    if (substr($url["url"], 0, 4) === "http" || strpos($url["url"], "MP4")) {
+                    if (strpos($url["url"], "mp4")) {
                         echo "<iframe src='" . $url["url"] . "' allowfullscreen></iframe>";
                     } else {
                         echo "<img src='" . $url["url"] . "'>";

@@ -1,23 +1,14 @@
 <?php include("../header/header.html") ?>
+
 <?php
-if (isset($_FILES["photo"])) {
+if (isset($_FILES["realisation"])) {
     $file = file_get_contents("realisations.json");
     $array = json_decode($file, true);
+    $new_realisation = array();
 
-    $new_realisation = array(
-
-
-    );
-
-
-
-    if (isset($_FILES["photo"])) {
-        $file_path = "../../img/" . basename($_FILES["photo"]["name"]);
-        move_uploaded_file($_FILES["photo"]["tmp_name"], $file_path);
-        $new_realisation["url"] = $file_path;
-    } else {
-        $new_realisation["url"] = "";
-    }
+    $file_path = "../../img/" . basename($_FILES["realisation"]["name"]);
+    move_uploaded_file($_FILES["realisation"]["tmp_name"], $file_path);
+    $new_realisation["url"] = $file_path;
 
     $i = 0;
     foreach ($array[$_GET["community"]] as $comm) {
@@ -27,16 +18,14 @@ if (isset($_FILES["photo"])) {
         $i = $i + 1;
     }
 
-//    print_r($i);
-//    exit();
     $array[$_GET["community"]][$i]["list"][] = $new_realisation;
     $json = json_encode($array);
     file_put_contents("realisations.json", $json);
 
-    header("Location: realisations.php?challenge=" . $_GET["challenge"]."&community=".$_GET["community"]."&name=".$_GET["name"]);
-    exit();
+    header("Location: realisations.php?challenge=" . $_GET["challenge"] . "&community=" . $_GET["community"] . "&name=" . $_GET["name"]);
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -48,17 +37,17 @@ if (isset($_FILES["photo"])) {
 
 <body>
 
-<div class="container">
+<div class="container-fluid">
     <form id="form" action="#" method="post" enctype="multipart/form-data">
-        <div class="row">
+        <div class="row m-4">
             <h3 class="form-title text-center" id="title_new_realisation">Ajoutez une nouvelle réalisation</h3>
         </div>
 
         <div id="form_content">
-            <div class="row">
+            <div class="row m-4">
                 <div class="mb-3">
-                    <label class="form-label" for="photo">Photo</label>
-                    <input type="file" name="photo" class="form-control" id="photo">
+                    <label class="form-label" for="realisation">Photo <span style="color: red">*</span></label>
+                    <input type="file" name="realisation" class="form-control" id="realisation" required>
                 </div>
             </div>
         </div>
@@ -68,7 +57,7 @@ if (isset($_FILES["photo"])) {
             <div class="col"></div>
 
                 <div class="col">
-                    <button type="submit" class="btn btn-primary btn-lg" id="add_button">ajouter</button>
+                    <button type="submit" class="btn btn-primary btn-lg" id="add_button">Ajouter</button>
                 </div>
 
             <div class="col"></div>

@@ -108,7 +108,7 @@ if (isset($_POST["title"]) && isset($_POST["description"]) && isset($_POST["diff
             <div class="col"></div>
 
             <div class="col">
-                <button type="submit" class="btn btn-primary btn-lg" id="create_button">Create</button>
+                <button type="submit" class="btn btn-primary btn-lg" id="create_button">Ajouter</button>
             </div>
 
             <div class="col"></div>
