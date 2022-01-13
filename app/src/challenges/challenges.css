@@ -29,10 +29,15 @@ p {
 
 a {
     color: #140067;
+    text-decoration: none;
 }
 
 i {
     color: #140067;
     font-size: 35px;
+}
+
+h2 {
+    font-size: 50px;
 }
 

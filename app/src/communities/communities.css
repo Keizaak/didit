@@ -1,3 +1,17 @@
+p {
+    color: #140067;
+    font-size: 35px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 50px;
+    color: #140067;
+}
+
 #container_community {
     margin-top: 5%;
 }
@@ -5,15 +19,6 @@
 #box_community {
     overflow-y: scroll;
     background-color: #ffc600;
-}
-
-p {
-    font-size: 35px;
-}
-
-a {
-    color: #140067;
-    text-decoration: none;
 }
 
 #img_community {

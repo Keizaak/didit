@@ -17,19 +17,20 @@
 
     foreach ($values["communities"] as $value) {
     ?>
+    <a href="../challenges/challenges.php?community=<?php echo $value["title"];?>&name=<?php echo $value["name"];?>">
+        <div class="container-fluid" id="box_community">
+            <div class="row">
+                <div class="col-md-4 ml-md-5 mr-md-5">
+                    <img class='img custom-title-didit' style='border-radius: 50%; !important; height: 250px; !important; width: 250px; !important; margin-top: 10%; margin-bottom: 10%' src=<?php echo $value["image_url"]?>>
+                </div>
 
-    <div class="container-fluid" id="box_community">
-        <div class="row">
-            <div class="col-md-4 ml-md-5 mr-md-5">
-                <img class='img custom-title-didit' style='border-radius: 50%; !important; height: 250px; !important; width: 250px; !important; margin-top: 10%; margin-bottom: 10%' src=<?php echo $value["image_url"]?>>
-            </div>
-
-            <div class="col">
-                    <a href="../challenges/challenges.php?community=<?php echo $value["title"];?>&name=<?php echo $value["name"];?>">d/<?php echo $value["name"];?></a>
-                    <p><?php echo $value["description"]?></p>
+                <div class="col">
+                        <h2><b>d/<?php echo $value["name"];?></b></h2>
+                        <p><?php echo $value["description"]?></p>
+                </div>
             </div>
         </div>
-    </div>
+    </a>
     <br>
     <?php
     }
