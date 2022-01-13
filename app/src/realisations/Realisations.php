@@ -25,12 +25,9 @@
                         <hr class="mt-2 mb-5">
 
                             <div id="lightgallery" class="row lightGallery">
-
-                                <div class="d-block mb-4 h-100">
-                                    <iframe width="100%" height="600px" src="../../video/loan_max_skate.MP4" frameborder="0" allowfullscreen></iframe>
-
-                                </div>
                                 <?php
+
+
                                 $ressource = fopen('Realisations.json', 'r');
                                 $content= fread($ressource, filesize('Realisations.json'));
                                 $values=json_decode($content, true);
@@ -38,14 +35,20 @@
 
                                 foreach ($values[$_GET["community"]] as &$value) {
                                     if ($value["title"] == $_GET["challenge"]) {
-                                        foreach ($value["list"] as &$url) { ?>
+                                        foreach ($value["list"] as &$url) {
+                                            if (str_contains($url, "MP4")) { ?>
+                                                <div class="d-block mb-4 h-100">
+                                                    <iframe width="100%" height="600px" src="<?php echo $url["url"] ?>" frameborder="0" allowfullscreen></iframe>
+                                                </div>
+                                            <?php } else { ?>
                                                 <div class="image-tile d-block mb-4 h-100">
                                                     <img class="col" src="<?php echo $url["url"] ?>" alt="image small" style="width: 100%;">
                                                     <div class="demo-gallery-poster">
                                                         <!--<img src="http://www.urbanui.com/fily/template/images/lightbox/play-button.png" alt="image">-->
                                                     </div>
                                                 </div>
-                                        <?php
+                                            <?php
+                                            }
                                         }
                                     }
                                 }
