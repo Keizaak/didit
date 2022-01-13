@@ -716,6 +716,11 @@ pre code {
   width: 100%;
 }
 
+.font-mini {
+  font-size: 0.5rem;
+  padding-left: 1rem;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
