@@ -38,5 +38,15 @@
       "difficult": "3",
       "image_url": ""
     }
+  ],
+  "Dome": [
+    {
+      "title":"Skate",
+      "description":"Ce defis est la réalisation d'une performance en skateboard devant le batiment",
+      "difficult": "1",
+      "image_url": ""
+    }
+
+
   ]
 }
