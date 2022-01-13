@@ -7,9 +7,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.0/css/lightgallery.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
-        $(document).ready(function() {
-            $('#lightgallery').lightGallery();
-        });
     </script>
     <script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1556817331/lightgallery-all.min.js"></script>
 </head>
@@ -37,13 +34,11 @@
                                 foreach ($values[$_GET["community"]] as &$value) {
                                     if ($value["title"] == $_GET["challenge"]) {
                                         foreach ($value["list"] as &$url) { ?>
-                                                <div class="">
-                                                    <a href="<?php echo $url["url"] ?>" class="image-tile d-block mb-4 h-100" data-abc="true">
-                                                        <img class="col" src="<?php echo $url["url"] ?>" alt="image small" style="width: 100%;">
-                                                        <div class="demo-gallery-poster">
-                                                            <!--<img src="http://www.urbanui.com/fily/template/images/lightbox/play-button.png" alt="image">-->
-                                                        </div>
-                                                    </a>
+                                                <div class="image-tile d-block mb-4 h-100">
+                                                    <img class="col" src="<?php echo $url["url"] ?>" alt="image small" style="width: 100%;">
+                                                    <div class="demo-gallery-poster">
+                                                        <!--<img src="http://www.urbanui.com/fily/template/images/lightbox/play-button.png" alt="image">-->
+                                                    </div>
                                                 </div>
                                         <?php
                                         }
