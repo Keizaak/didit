@@ -27,7 +27,7 @@
                             <div id="lightgallery" class="row lightGallery">
 
                                 <div class="image-tile d-block mb-4 h-100">
-                                    <iframe class="col" src="../../video/loan_max_skate.MP4" alt="image small" style="width: 100%;"></iframe>
+                                    <iframe width="100%" height="600px" src="../../video/loan_max_skate.MP4" frameborder="0" allowfullscreen></iframe>
                                     <div class="demo-gallery-poster">
                                         <!--<img src="http://www.urbanui.com/fily/template/images/lightbox/play-button.png" alt="image">-->
                                     </div>
