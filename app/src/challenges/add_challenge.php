@@ -11,6 +11,14 @@ if (isset($_POST["title"]) && isset($_POST["description"]) && isset($_POST["diff
            "difficult" => $_POST["difficulty"]
    );
 
+   if (isset($_FILES["photo"])) {
+       $file_path = "../../img/" . basename($_FILES["photo"]["name"]);
+       move_uploaded_file($_FILES["photo"]["tmp_name"], $file_path);
+       $new_challenge["image_url"] = $file_path;
+   } else {
+       $new_challenge["image_url"] = "";
+   }
+
    $array[$_GET["community"]][] = $new_challenge;
    $json = json_encode($array);
    file_put_contents("Challenges.json", $json);
@@ -31,7 +39,7 @@ if (isset($_POST["title"]) && isset($_POST["description"]) && isset($_POST["diff
 <body>
 
 <div class="container">
-    <form id="form" action="" method="post">
+    <form id="form" action="" method="post" enctype="multipart/form-data">
         <div class="row">
             <h3 class="form-title text-center" id="title_new_challenge">Ajoutez un nouveau défi</h3>
         </div>
@@ -85,7 +93,7 @@ if (isset($_POST["title"]) && isset($_POST["description"]) && isset($_POST["diff
             <div class="row">
                 <div class="mb-3">
                     <label class="form-label" for="photo">Photo</label>
-                    <input type="file" class="form-control" id="photo">
+                    <input type="file" class="form-control" name="photo" id="photo" accept="image/*">
                 </div>
             </div>
         </div>
