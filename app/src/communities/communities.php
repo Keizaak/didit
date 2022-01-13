@@ -8,7 +8,7 @@
 </head>
 <?php include("../header/header.html") ?>
 <body>
-    <div style="overflow-y: scroll; margin-top: 45px;">
+    <div style="overflow-y: scroll;">
         <?php
         $ressource = fopen('Communities.json', 'r');
         $content= fread($ressource, filesize('Communities.json'));

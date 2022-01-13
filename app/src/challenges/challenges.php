@@ -7,41 +7,41 @@
 
     <title>DidIt</title>
 </head>
-<header>
-    <h2 style="text-align: center;">challenge list</h2>
-</header>
+
+<?php include("../header/header.html") ?>
 
 <body>
-<table>
-    <div style="overflow-y: scroll; height:400px;">
+    <div style="overflow-y: scroll;">
         <?php
         $ressource = fopen('Challenges.json', 'r');
         $content= fread($ressource, filesize('Challenges.json'));
         $values=json_decode($content, true);
 
+        
         foreach ($values[$_GET["community"]] as &$value) {
+            echo "<div style=\"background-color: #ffc600; margin-bottom: 15px; \"><table style='margin-left: 20px; margin-right: 20px;'><tr>";
+            echo "<td><a href=# style='text-decoration : None;'><div style='font-weight: bold; margin-top: 20px; margin-bottom: 40px;'>" . $value['title'] . "</div></a></td><td><div style='color: red !important;'>";
             switch ($value['difficult']) {
                 case 1:
-                    echo "<a href=../challenges/challenges.php?community=" . $value['title'] . ">" . $value['title'] . "<br>" . $value['description'] . "★☆☆" . "<br>" . "</a>";
+                    echo "★☆☆";
                     break;
                 case 2:
-                    echo "<a href=../challenges/challenges.php?community=" . $value['title'] . ">" . $value['title'] . "<br>" . $value['description'] . "★★☆" . "<br>" . "</a>";
+                    echo "★★☆";
                     break;
 
                 case 3:
-                    echo "<a href=../challenges/challenges.php?community=" . $value['title'] . ">" . $value['title'] . "<br>" . $value['description'] . "★★★" . "<br>" . "</a>";
+                    echo "★★★";
                     break;
                 default:
-                    echo "<a href=../challenges/challenges.php?community=" . $value['title'] . ">" . $value['title'] . "<br>" . $value['description'] . "☆☆☆" . "<br>" . "</a>";
+                    echo "☆☆☆";
                     break;
             }
+            echo "</div></td></tr>";
+
+            echo "<tr><td>" . $value['description'] . "</td></tr></table></div>";
         }
         ?>
-
-
     </div>
-</table>
-
 </body>
 
 </html>
