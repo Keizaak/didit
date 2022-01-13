@@ -33,7 +33,7 @@ if (isset($_FILES["photo"])) {
     $json = json_encode($array);
     file_put_contents("Realisations.json", $json);
 
-    header("Location: Realisations.php?challenge=" . $_GET["challenge"]."&community=".$_GET["community"]);
+    header("Location: Realisations.php?challenge=" . $_GET["challenge"]."&community=".$_GET["community"]."&name=".$_GET["name"]);
     exit();
 }
 ?>

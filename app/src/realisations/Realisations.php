@@ -20,17 +20,14 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body">
-                        <h2 class="text-center"><?php echo $_GET["challenge"] ?></h2>
-                        <p class="text-center"><?php echo $_GET["name"] ?></p>
+                        <h2 style="font-size: 60px;" class="text-center"><?php echo $_GET["challenge"] ?></h2>
+                        <p style="font-size: 40px;" class="text-center"><?php echo $_GET["name"] ?></p>
                         <hr class="mt-2 mb-5">
 
                             <div id="lightgallery" class="row lightGallery">
-
-                                <div class="d-block mb-4 h-100">
-                                    <iframe width="100%" height="600px" src="../../video/loan_max_skate.MP4" frameborder="0" allowfullscreen></iframe>
-
-                                </div>
                                 <?php
+
+
                                 $ressource = fopen('Realisations.json', 'r');
                                 $content= fread($ressource, filesize('Realisations.json'));
                                 $values=json_decode($content, true);
@@ -38,14 +35,20 @@
 
                                 foreach ($values[$_GET["community"]] as &$value) {
                                     if ($value["title"] == $_GET["challenge"]) {
-                                        foreach ($value["list"] as &$url) { ?>
+                                        foreach ($value["list"] as &$url) {
+                                            if (strpos($url["url"], "MP4") !== false) { ?>
+                                                <div class="d-block mb-4 h-100">
+                                                    <iframe style="max-height: 3000px;" width="100%" height="1000px" src="<?php echo $url["url"] ?>" frameborder="0" allowfullscreen></iframe>
+                                                </div>
+                                            <?php } else { ?>
                                                 <div class="image-tile d-block mb-4 h-100">
                                                     <img class="col" src="<?php echo $url["url"] ?>" alt="image small" style="width: 100%;">
                                                     <div class="demo-gallery-poster">
                                                         <!--<img src="http://www.urbanui.com/fily/template/images/lightbox/play-button.png" alt="image">-->
                                                     </div>
                                                 </div>
-                                        <?php
+                                            <?php
+                                            }
                                         }
                                     }
                                 }
@@ -60,7 +63,7 @@
 </body>
 <div class="container text-center">
     <a id="plus_button" class="btn btn-warning btn-lg" role="button"
-       href="add_realisation.php?challenge=<?php echo $_GET["challenge"]?>&community=<?php echo $_GET["community"]?>">
+       href="add_realisation.php?challenge=<?php echo $_GET["challenge"]?>&community=<?php echo $_GET["community"]?>&name=<?php echo $_GET["name"]?>">
         <i class="fas fa-plus fa-align-center" id="plus_icon"></i>
     </a>
 </div>
