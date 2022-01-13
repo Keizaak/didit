@@ -1,10 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="ChallengesStyle.css" rel="stylesheet">
-
+    <link href="challenges.css" rel="stylesheet">
     <title>DidIt</title>
 </head>
 
@@ -41,8 +39,21 @@
 
             echo "<tr><td colspan=\"2\">" . $value['description'] . "</td></tr></table></div>";
         }
-        ?>
+        echo "</div></td></tr>";
+
+        echo "<tr><td>" . $value['description'] . "</td></tr></table></div>";
+    }
+    ?>
+</div>
+
+<footer class="bg-transparent">
+    <div class="container text-center">
+        <a id="plus_button" class="btn btn-warning btn-lg" role="button" href="add_challenge.php?community=<?php echo $_GET["community"]?>">
+            <i class="fa fa-plus fa-align-center"></i>
+        </a>
     </div>
+</footer>
+
 </body>
 
 </html>

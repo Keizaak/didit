@@ -1,0 +1,65 @@
+{
+  "pass_Tafarisme": [
+    {
+        "title": "Achat",
+        "list": [
+          {
+            "url": "rtgrgrg"
+          },
+          {
+            "url": "rtgrgrg"
+          }
+        ]
+
+    },
+    {
+      "title": "Cuisine",
+      "list": [
+        {
+          "url": "aaaaa"
+        },
+        {
+          "url": "bbbbb"
+        }
+      ]
+    }
+
+  ],
+  "lovepass": [
+    {
+      "title": "Depistage",
+      "list": [
+        {
+          "url": "rtgrgrg"
+        },
+        {
+          "url": "rtgrgrg"
+        }
+      ]
+
+    },
+    {
+      "title": "Scan",
+      "list": [
+        {
+          "url": "aaaaa"
+        },
+        {
+          "url": "bbbbb"
+        }
+      ]
+    }
+  ],
+  "Dome": [
+    {
+      "title": "Skate",
+      "list": [
+        {
+          "url": "../../video/loan_max_skate.MP4"
+        }
+      ]
+
+    }
+  ]
+
+}

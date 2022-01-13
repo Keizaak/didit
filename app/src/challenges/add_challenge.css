@@ -1,0 +1,19 @@
+#form_content {
+    text-align: left;
+}
+
+#title_new_challenge {
+    color: #ffc600
+}
+
+.btn.btn-circle {
+    color: #140067;
+    background-color: #ffc600;
+    border-color: #ffc600;
+}
+
+.btn-circle:checked {
+    color: #ffc600;
+    background-color: #140067;
+    border-color: #140067;
+}
