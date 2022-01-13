@@ -20,8 +20,8 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body">
-                        <h2 class="text-center"><?php echo $_GET["challenge"] ?></h2>
-                        <p class="text-center"><?php echo $_GET["name"] ?></p>
+                        <h2 style="font-size: 60px;" class="text-center"><?php echo $_GET["challenge"] ?></h2>
+                        <p style="font-size: 40px;" class="text-center"><?php echo $_GET["name"] ?></p>
                         <hr class="mt-2 mb-5">
 
                             <div id="lightgallery" class="row lightGallery">
@@ -36,7 +36,7 @@
                                 foreach ($values[$_GET["community"]] as &$value) {
                                     if ($value["title"] == $_GET["challenge"]) {
                                         foreach ($value["list"] as &$url) {
-                                            if (str_contains($url, "MP4")) { ?>
+                                            if (strpos($url["url"], "MP4") !== false) { ?>
                                                 <div class="d-block mb-4 h-100">
                                                     <iframe width="100%" height="600px" src="<?php echo $url["url"] ?>" frameborder="0" allowfullscreen></iframe>
                                                 </div>
