@@ -11,8 +11,8 @@
 <body>
     <div style="overflow-y: scroll;">
         <?php
-        $ressource = fopen('Challenges.json', 'r');
-        $content= fread($ressource, filesize('Challenges.json'));
+        $ressource = fopen('challenges.json', 'r');
+        $content= fread($ressource, filesize('challenges.json'));
         $values=json_decode($content, true);
 
         
