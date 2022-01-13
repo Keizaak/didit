@@ -66,7 +66,7 @@
         </div>
         <ul class="navbar-nav ml-auto">
           <li class="dropdown nav-item">
-            <a href="pages/sujet.html" class="nav-link">
+            <a href="./sujet.html" class="nav-link">
               <i class="fas fa-question-circle mt-08" aria-hidden="true"></i>
              <p>De quoi parle-t-on ?</p>
             </a>
@@ -100,11 +100,11 @@
   <!-- End Navbar -->
   <div class="wrapper">
     <div class="page-header header-filter">
-      <div class="page-header-image" data-parallax="true" style="background-image: url('../assets/img/pexels-cottonbro-4069292.jpg');"></div>
+      <div class="page-header-image" data-parallax="true" style="background-image: url('../assets/img/teamwork.jpg');"></div>
       <div class="container">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center">
-            <h1 class="title mb-10">Les failles de notre société </br>hyper-connectée</h1>
+            <h1 class="title mb-10">Documentation Technique</h1>
           </div>
         </div>
       </div>
@@ -113,80 +113,51 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto">
-            <h6 class="category">14 Janvier, 2022</h6>
-            <h3 class="title">Les risques des réseaux</h3>
+            <h3 class="title">Comment ça marche ?</h3>
               <p>
-                  Les réseaux sociaux sont de plus en plus nombreux, et occupent une grande partie du quotidien des jeunes
-                  aujourd’hui. Bien que leur utilisation soit plutôt positive en terme de distraction, ils s’avèrent parfois
-                  être néfastes, et présentent des risques dangereux pour les utilisateurs.
-
-                  Le sujet abordé par notre projet est la conception d’un nouveau réseau social, qui a pour but de mieux
-                  encadrer les activités présentées et limiter les risques d’utilisation.
+                  Notre solution se base sur l’accès au site web grâce à une puce NFC integrée dans une carte créée
+                au FabLab du Dôme. L’accès au site se fait lorsqu’on approche la carte d’un smartphone qui accepte
+                la technologie NFC. Nous atterissons alors sur la page d’accueil, il suffira par la suite de se
+                connecter pour accéder aux différentes communautés.
               </p>
             <br/>
-            <h3 class="title">Détecter les imposteurs</h3>
+            <h3 class="title">Pourquoi ça marche ?</h3>
               <p>
-                  Les faux comptes ne sont pas ce qu’il manque sur les réseaux sociaux, et cela est principalement dû
-                  à la flexibilité de création de comptes pour un but purement commercial. Nous avons voulu agir autrement,
-                  c’est pourquoi une pièce d’identité est requise pour l’inscription. Cela permettra la vérification de
-                  l’utilisateur, ainsi que l’unicité du compte.
+                  L’hébergment du site web se fait en utilisant la machine virtuelle mise à disposition par le Dôme,
+                où l’installation d’Apache2 est réalisée en utilisant le port 80.
               </p>
             <br/>
-            <h3 class="title">Contrer le cyber-harcèlement et les propos haineux</h3>
+            <h3 class="title">Avec quoi ça marche ?</h3>
               <p>
-                  20% des jeunes disent avoir déjà été confrontés au cyber-harcèlement, malheureusement ce problème
-                  ne risque pas de disparaître, mais nous avons pensé à un moyen de le limiter au maximum.
-                  Cela se concrétise notamment par un système de signalement conséquent, puisqu’il dépend du
-                  pourcentage du nombre de membres de la communauté. Une fois qu’un contenu est sufisamment signalé,
-                  il est retiré automatiquement, jusqu’à réapprobation d’un modérateur. En plus de cela, l’utilisateur
-                  ne pourra pas s’inscrire à nouveau puisqu’une pièce d’identité est requise pour le faire.
+                  Langages de programmation : HTML, CSS, JavaScript, PHP
+                  Framework : Bootstrap
+                  IDE : IntellIij, PHPStorm, WinSCP, Xampp, Wamp…
               </p>
             <br/>
-            <h3 class="title">Mieux encadrer les activités</h3>
+            <h3 class="title">Prérequis pour l’installation</h3>
               <p>
-                  L’un des problèmes courants dans les communautés des réseaux sociaux actuels est que tout le monde
-                  peut publier du contenu, or ce n’est pas possible sur Didit, seuls les responsables de la communauté
-                  ont la possibilité de créer des défis, ces derniers sont donc moins susceptibles d’être hors-sujet
-                  ou à caractère haineux.
+                  L’utilisation de l’application requiert un smartphone qui comporte
+                la technologie NFC (mais il faut l’activer dans certains smartphones).
               </p>
             <br/>
-            <h3 class="title">De la continuité dans les participations</h3>
+            <h3 class="title">Voies d’améliorations</h3>
               <p>
-                  Pour inciter les utilisateurs à rester actifs de façon permanente sur l’application, un système
-                  de points est mis en place. L’utilisateur verra alors son score augmenter au sein de la communauté
-                  au fur et à mesure de sa participation aux défis. L’inactivité au bout d’un certain temps a pour
-                  conséquence d’être relégué à un niveau plus bas.
+                  L’implémentation d’une base de données pour mieux gérer les communautés, ainsi que les comptes
+                des utilisateurs. L’opérabilité d’un scanner de pièces d’identité pour vérifier les informations
+                de l’utilisateur. Inscription à une communauté conditionnée par l’âge de l’utilisateur
+                (défis dangereux pour les jeunes par exemple). Contrôle parental pour les plus jeunes.
+                L’intégration des entreprises en tant que communautés officielles.
               </p>
             <br/>
-            <h3 class="title">Utilisation des données personnelles</h3>
+            <h3 class="title">Public cible</h3>
               <p>
-                  La récupération de données personnelles de l’utilisateur est un sujet critique, mais qui reste
-                  toutefois indispensable pour créer un produit fiable. Grâce aux conditions générales d’utilisation,
-                  on peut obtenir très facilement ces données par l’intermédiaire d’une acceptation
-                  volontaire de l’utilisateur.
+                  Notre application tient la majorité de ses caractéristiques des réseaux sociaux, qui ont pour
+                public cible principal les adolescents et les jeunes adultes. Sur TikTok, l’inscription est
+                conditionnée par un âge minimum de 13 ans, pareil pour Snapchat. Pour Facebook en revanche,
+                cela varie en fonction du pays. Nous nous sommes inspirés de ces informations, et avons donc
+                choisi de viser un public de jeunes adultes et d’adolescents ayant au minimum 13 ans.
               </p>
-            <br/>
-            <br/>
-            <h3 class="title">Liens utiles</h3>
-            <p class="blockquote">
-              Cyberviolence et cyberharcèlement : approches sociologiques<br/>
-              <a target="_blank" href="https://www.cairn.info/revue-la-nouvelle-revue-de-l-adaptation-et-de-la-scolarisation-2011-1-page-47.htm">Article sur le site du cairn</a>
-            </p>
-            <p class="blockquote">
-              Cyberharcèlement chez les mineurs<br/>
-              <a target="_blank" href="https://www.sciencedirect.com/science/article/abs/pii/S0003448720300718">Article sur le site sciencedirect.com</a>
-            </p>
-            <p class="blockquote">
-              Génération Y: Les jeunes et les réseaux sociaux, de la dérision à la subversion<br/>
-              <a target="_blank" href="https://books.google.fr/books?hl=fr&lr=&id=1G0XAgAAQBAJ&oi=fnd&pg=PA7&dq=critique+r%C3%A9seaux+sociaux&ots=3hzfDXgCj6&sig=gTve0mWwXOyTZ_bF83xY0DJ-F0g&redir_esc=y#v=onepage&q=critique%20r%C3%A9seaux%20sociaux&f=false">Livre de Monique Dagnaud</a>
-            </p>
-            <p class="blockquote">
-              Les réseaux sociaux : un regard critique<br/>
-              <a target="_blank" href="http://barthes.enssib.fr/articles/Guichard-Reseaux-sociaux.pdf">Article sur le site Barthes</a>
-            </p>
-            <br/>
           </div>
-
         </div>
       </div>
     </div>
