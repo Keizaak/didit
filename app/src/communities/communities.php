@@ -10,8 +10,8 @@
 <body>
     <div style="overflow-y: scroll;">
         <?php
-        $ressource = fopen('Communities.json', 'r');
-        $content= fread($ressource, filesize('Communities.json'));
+        $ressource = fopen('communities.json', 'r');
+        $content= fread($ressource, filesize('communities.json'));
         $values=json_decode($content, true);
         foreach ($values['communities'] as &$value) {
             echo "<div style=\"background-color: #ffc600; margin-bottom: 15px; \"><table><tr>";
