@@ -1,25 +1,40 @@
+<?php include("../header/header.html") ?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link href="CommunitiesStyle.css" rel="stylesheet">
+    <link href="communities.css" rel="stylesheet">
 
     <title>DidIt</title>
 </head>
-<?php include("../header/header.html") ?>
 <body>
-    <div style="overflow-y: scroll;">
-        <?php
-        $ressource = fopen('communities.json', 'r');
-        $content= fread($ressource, filesize('communities.json'));
-        $values=json_decode($content, true);
-        foreach ($values['communities'] as &$value) {
-            echo "<div style=\"background-color: #ffc600; margin-bottom: 15px; \"><table><tr>";
-            echo "<td style='width: 300px;'><img style='border-radius: 50% !important; height: 250px !important; width: 250px !important; margin-left: 15px;' class='img rounded custom-title-didit' src='".$value['image_url']."'></td>";
-            echo "<td><a style='text-decoration : None;' href=../challenges/challenges.php?community=".$value['title']."&name=".$value['name']."><div style='font-weight: bold; margin-top: 20px; margin-bottom: 40px;'>d/".$value['name']."</div style='font-size: 12px;'><div style='margin-bottom: 20px;'>".$value['description']."</div></a></td>";
-            echo "</tr></table></div>";
-        }
-        ?>
+
+<div class="container-fluid" id="container_community">
+    <?php
+    $file = file_get_contents("communities.json");
+    $values = json_decode($file, true);
+
+    foreach ($values["communities"] as $value) {
+    ?>
+
+    <div class="container-fluid" id="box_community">
+        <div class="row">
+            <div class="col-md-4 ml-md-5 mr-md-5">
+                <img class='img custom-title-didit' style='border-radius: 50%; !important; height: 250px; !important; width: 250px; !important; margin-top: 10%; margin-bottom: 10%' src=<?php echo $value["image_url"]?>>
+            </div>
+
+            <div class="col">
+                    <a href="../challenges/challenges.php?community=<?php echo $value["title"];?>&name=<?php echo $value["name"];?>">d/<?php echo $value["name"];?></a>
+                    <p><?php echo $value["description"]?></p>
+            </div>
+        </div>
     </div>
+    <br>
+    <?php
+    }
+    ?>
+</div>
+
 </body>
 </html>

@@ -11,6 +11,7 @@
     color: #140067;
     background-color: #ffc600;
     border-color: #ffc600;
+    border-radius: 10%;
     font-size: 25px;
 }
 
@@ -18,4 +19,12 @@
     color: #ffc600;
     background-color: #140067;
     border-color: #140067;
+}
+
+#create_button {
+    font-size: 35px !important;
+}
+
+#title, #description, #photo {
+    font-size: 35px;
 }
