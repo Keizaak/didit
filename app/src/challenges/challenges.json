@@ -4,19 +4,19 @@
       "title":"Achat",
       "description":"pour ce defis, vous devez acheter plusieurs kilos de spaghettis tout en profitant des reductions offertes par le pass'Tafarisme",
       "difficult": "1",
-      "image_url": ""
+      "image_url": "../../img/default_defi.png"
     },
     {
       "title":"Cuisine",
       "description":"pour ce defis, vous devez cuisiner un plat a base de pâtes. Ce plat ce doit d'etre original.",
       "difficult": "2",
-      "image_url":  ""
+      "image_url":  "../../img/cuisine.png"
     },
     {
       "title":"Grades",
       "description":"adorateurs des pates pour ce defis exceptionnel vous devez atteindre le grade de linguine avec votre passe'Tafarisme. Ce defis n'est pas a la portée de tous.",
       "difficult": "3",
-      "image_url":  ""
+      "image_url":  "../../img/grade.png"
     }
   ],
   "love_pass": [
@@ -24,19 +24,19 @@
       "title":"Depistage",
       "description":"pour ce defis c'est très simple vous devez vous faire depister pour obtenir votre love pass !",
       "difficult": "1",
-      "image_url": ""
+      "image_url": "../../img/default_defi.png"
     },
     {
       "title":"Scan",
       "description":"aujourd'hui vous etes mis au defis de réaliser votre premier scann de partenaires.",
       "difficult": "2",
-      "image_url": ""
+      "image_url": "../../img/default_defi.png"
     },
     {
       "title":"Conservation",
       "description":"pour valider ce defis vous devez faire preuve de la possession de ce pass depuis plus de 6 mois.",
       "difficult": "3",
-      "image_url": ""
+      "image_url": "../../img/default_defi.png"
     }
   ]
 }

@@ -1,0 +1,51 @@
+{
+  "communities":[
+    {
+      "title": "pass_Tafarisme",
+      "name":"Pass'Tafarisme",
+      "description":"Si tu es fan de pâtes, ta place est ici !",
+      "image_url":  "../../img/tafarism.png"},
+    {
+      "title":"love_pass",
+      "name":"Love Pass",
+      "description":"Si tu redoutes les MST, tu trouveras toutes les infos que tu cherches !",
+      "image_url":  "../../img/love.png"
+    },
+    {
+      "title":"Dome",
+      "name":"Dôme",
+      "description":"Le Dôme est un espace collaboratif d'innovation ouvert à tous les publics. Il propose des actions de culture scientifique et technique autour de projets réels de recherche et d'innovation.",
+      "image_url":  "../../img/logo_dome.png"
+    },
+    {
+      "title":"Course_de_cochon_dinde",
+      "name":"Course de cochon dinde",
+      "description":"Cette communauté est faite pour les heureux detenteurs de cochon d'inde, en effet vous pourrez mettre en competition vos petits compagnons dans des courses folles.",
+      "image_url":  "../../img/logo-cochondinde.png"
+    },
+    {
+      "title":"Musical_dance",
+      "name":"Musical dance",
+      "description":"Venez exprimé votre art avec des personnes qui sauront l'apprécier.",
+      "image_url":  "../../img/logo-dance.png"
+    },
+    {
+      "title":"Lego",
+      "name":"Lego",
+      "description":"Dans cette communauté laisser votre créativité s'exprimer.",
+      "image_url":  "../../img/logo-lego.png"
+    },
+    {
+      "title":"Dumb_Cat_Challenges",
+      "name":"Dumb Cat Challenges",
+      "description":"Ton chat est bizarre ? Filme ses exploits et poste-les !",
+      "image_url":  "../../img/logo-chatmi-thon.png"
+    },
+    {
+      "title":"Street_Workout",
+      "name":"Street Workout",
+      "description":"supassez vous en réalisant les différents défis de la communautée et partgez vos performances.",
+      "image_url":  "../../img/logo-workout.png"
+    }
+  ]
+}

@@ -36,6 +36,8 @@ header {
 
 .custom-toggler .navbar-toggler-icon {
     background-image: url("../../img/Menu_button.svg");
+    height: 50px;
+    width: 50px;
 }
 
 
