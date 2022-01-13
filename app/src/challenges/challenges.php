@@ -6,6 +6,12 @@
     <meta charset="UTF-8">
     <link href="challenges.css" rel="stylesheet">
     <title>DidIt</title>
+
+    <script>
+        window.onload = function() {
+            window.scrollTo(0, 0);
+        }
+    </script>
 </head>
 
 <body>
@@ -17,7 +23,7 @@
 
     foreach ($values[$_GET["community"]] as $value) {?>
 
-    <a href="../realisations/Realisations.php?challenge=<?php echo $value['title']?>&community=<?php echo $_GET["community"]?>&name=<?php echo $_GET["name"] ?>">
+    <a href="../realisations/realisations.php?challenge=<?php echo $value['title']?>&community=<?php echo $_GET[">
         <div class="container-fluid" id="box_challenge">
             <div class="row">
                 <div class="col">

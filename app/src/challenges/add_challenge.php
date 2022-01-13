@@ -34,11 +34,16 @@ if (isset($_POST["title"]) && isset($_POST["description"]) && isset($_POST["diff
 
     <meta charset="UTF-8">
     <title>Add a new challenge</title>
+
+    <script>
+        window.onload = function() {
+            window.scrollTo(0, 0);
+        }
+    </script>
 </head>
 
 <body>
-
-<div class="container-fluid">
+<div class="container-fluid" id="container_form">
     <form id="form" action="" method="post" enctype="multipart/form-data">
         <div class="row m-4">
             <h3 class="form-title text-center" id="title_new_challenge">Ajoutez un nouveau défi</h3>

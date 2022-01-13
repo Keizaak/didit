@@ -1,7 +1,7 @@
 <?php include("../header/header.html") ?>
 <?php
 if (isset($_FILES["photo"])) {
-    $file = file_get_contents("Realisations.json");
+    $file = file_get_contents("realisations.json");
     $array = json_decode($file, true);
 
     $new_realisation = array(
@@ -31,9 +31,9 @@ if (isset($_FILES["photo"])) {
 //    exit();
     $array[$_GET["community"]][$i]["list"][] = $new_realisation;
     $json = json_encode($array);
-    file_put_contents("Realisations.json", $json);
+    file_put_contents("realisations.json", $json);
 
-    header("Location: Realisations.php?challenge=" . $_GET["challenge"]."&community=".$_GET["community"]."&name=".$_GET["name"]);
+    header("Location: realisations.php?challenge=" . $_GET["challenge"]."&community=".$_GET["community"]."&name=".$_GET["name"]);
     exit();
 }
 ?>

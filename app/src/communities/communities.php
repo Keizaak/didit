@@ -7,6 +7,12 @@
     <link href="communities.css" rel="stylesheet">
 
     <title>DidIt</title>
+
+    <script>
+        window.onload = function() {
+            window.scrollTo(0, 0);
+        }
+    </script>
 </head>
 <body>
 

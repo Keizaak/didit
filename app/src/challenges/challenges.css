@@ -1,9 +1,9 @@
 #container {
     margin-top: 5%;
+    overflow-y: scroll;
 }
 
 #box_challenge {
-    overflow-y: scroll;
     background-color: #ffc600;
     padding: 1%;
 }

@@ -1,17 +1,20 @@
+<?php include("../header/header.html") ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="Realisations.css" rel="stylesheet">
+    <link href="realisations.css" rel="stylesheet">
     <title>DidIt</title>
     <meta charset="utf-8">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.0/css/lightgallery.min.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
     <script>
+        window.onload = function() {
+            window.scrollTo(0, 0);
+        }
     </script>
-    <script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1556817331/lightgallery-all.min.js"></script>
 </head>
 
-<?php include("../header/header.html") ?>
+
 
 <body>
     <div class="page-content page-container" id="page-content">
@@ -28,8 +31,8 @@
                                 <?php
 
 
-                                $ressource = fopen('Realisations.json', 'r');
-                                $content= fread($ressource, filesize('Realisations.json'));
+                                $ressource = fopen('realisations.json', 'r');
+                                $content= fread($ressource, filesize('realisations.json'));
                                 $values=json_decode($content, true);
 
 
