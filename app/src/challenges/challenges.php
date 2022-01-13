@@ -23,7 +23,7 @@
 
     foreach ($values[$_GET["community"]] as $value) {?>
 
-        <a href="../realisations/realisations.php?challenge=<?php echo $value['title']?>&community=<?php echo $_GET["community"]?>&name=<?php echo $_GET["name"] ?>">
+        <a href="../realisations/realisations.php?challenge=<?php echo $value['title']?>&community=<?php echo $_GET["community"]?>&name=<?php echo $value["title"] ?>">
         <div class="container-fluid" id="box_challenge">
             <div class="row">
                 <div class="col">
