@@ -58,5 +58,10 @@
         </div>
     </div>
 </body>
-
+<div class="container text-center">
+    <a id="plus_button" class="btn btn-warning btn-lg" role="button"
+       href="add_realisation.php?challenge=<?php echo $_GET["challenge"]?>&community=<?php echo $_GET["community"]?>">
+        <i class="fas fa-plus fa-align-center" id="plus_icon"></i>
+    </a>
+</div>
 </html>
