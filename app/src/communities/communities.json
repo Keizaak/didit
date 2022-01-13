@@ -20,19 +20,19 @@
     {
       "title":"Course_de_cochon_dinde",
       "name":"Course de cochon dinde",
-      "description":"Cette communauté est faite pour les heureux detenteurs de cochon d'inde, en effet vous pourrez mettre en competition vos petits compagnons dans des courses folles.",
+      "description":"Cette communauté est faite pour les heureux detenteurs de cochons d'inde : en effet vous pourrez mettre en competition vos petits compagnons dans des courses folles.",
       "image_url":  "../../img/logo-cochondinde.png"
     },
     {
       "title":"Musical_dance",
       "name":"Musical dance",
-      "description":"Venez exprimé votre art avec des personnes qui sauront l'apprécier.",
+      "description":"Venez exprimer votre art avec des personnes qui sauront l'apprécier.",
       "image_url":  "../../img/logo-dance.png"
     },
     {
       "title":"Lego",
       "name":"Lego",
-      "description":"Dans cette communauté laisser votre créativité s'exprimer.",
+      "description":"Dans cette communauté, laissez votre créativité s'exprimer.",
       "image_url":  "../../img/logo-lego.png"
     },
     {
@@ -44,7 +44,7 @@
     {
       "title":"Street_Workout",
       "name":"Street Workout",
-      "description":"supassez vous en réalisant les différents défis de la communautée et partgez vos performances.",
+      "description":"Surpassez-vous en réalisant les différents défis de la communauté et partagez vos performances.",
       "image_url":  "../../img/logo-workout.png"
     }
   ]

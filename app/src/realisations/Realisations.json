@@ -4,11 +4,24 @@
         "title": "Achat",
         "list": [
           {
-            "url": "rtgrgrg"
+            "url": "../../img/default_defi.png"
           },
           {
-            "url": "rtgrgrg"
+            "url": "../../img/default_defi.png"
+          },
+          {
+            "url": "../../img/default_defi.png"
+          },
+          {
+            "url": "../../img/default_defi.png"
+          },
+          {
+            "url": "../../img/default_defi.png"
+          },
+          {
+            "url": "../../img/default_defi.png"
           }
+
         ]
 
     },
@@ -16,10 +29,19 @@
       "title": "Cuisine",
       "list": [
         {
-          "url": "aaaaa"
+          "url": "../../img/cuisine_pate_1.png"
         },
         {
-          "url": "bbbbb"
+          "url": "../../img/cuisine_pate_2.png"
+        },
+        {
+          "url": "../../img/cuisine_pate_3.png"
+        },
+        {
+          "url": "../../img/cuisine_pate_4.png"
+        },
+        {
+          "url": "../../img/cuisine_pate_5.png"
         }
       ]
     }
