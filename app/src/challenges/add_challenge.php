@@ -38,62 +38,62 @@ if (isset($_POST["title"]) && isset($_POST["description"]) && isset($_POST["diff
 
 <body>
 
-<div class="container">
+<div class="container-fluid">
     <form id="form" action="" method="post" enctype="multipart/form-data">
-        <div class="row">
+        <div class="row m-4">
             <h3 class="form-title text-center" id="title_new_challenge">Ajoutez un nouveau défi</h3>
         </div>
 
         <div id="form_content">
-            <div class="row">
+            <div class="row m-4">
                 <div class="mb-3">
                     <label class="form-label" for="title">Titre <span style="color: red">*</span></label>
                     <input type="text" class="form-control" name="title" id="title" required>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row m-4">
                 <div class="mb-3">
                     <label class="form-label" for="description">Description <span style="color: red">*</span></label>
-                    <textarea class="form-control" name="description" id="description" rows="4" required></textarea>
+                    <textarea class="form-control" name="description" id="description" rows="7" required></textarea>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row m-4">
                 <div class="col">
                     <label class="form-label">Difficulté</label>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row m-4">
                 <div class="btn-group text-center" role="group" id="difficulty_buttons">
                     <div class="col">
                         <input type="radio" class="btn-check" name="difficulty" id="easy" value=1 autocomplete="off" checked>
-                        <label class="btn btn-primary" for="easy" id="easy_button">
+                        <label class="btn btn-primary btn-lg" for="easy" id="easy_button">
                             <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
                         </label>
                     </div>
 
                     <div class="col">
                         <input type="radio" class="btn-check" name="difficulty" id="medium" value=2 autocomplete="off">
-                        <label class="btn btn-primary" for="medium" id="medium_button">
+                        <label class="btn btn-primary btn-lg" for="medium" id="medium_button">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                         </label>
                     </div>
 
                     <div class="col">
                         <input type="radio" class="btn-check" name="difficulty" id="hard" value=3 autocomplete="off">
-                        <label class="btn btn-primary" for="hard" id="hard_button">
+                        <label class="btn btn-primary btn-lg " for="hard" id="hard_button">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </label>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row m-4">
                 <div class="mb-3">
                     <label class="form-label" for="photo">Photo</label>
-                    <input type="file" class="form-control" name="photo" id="photo" accept="image/*">
+                    <input type="file" class="form-control form-control-lg" name="photo" id="photo" accept="image/*">
                 </div>
             </div>
         </div>
