@@ -20,9 +20,6 @@
         },
         {
           "url": "..\/..\/img\/default_defi.png"
-        },
-        {
-          "url": "..\/..\/img\/logo-le-dome-530.jpg"
         }
       ]
     },
@@ -55,10 +52,10 @@
       "title": "Depistage",
       "list": [
         {
-          "url": "rtgrgrg"
+          "url": "..\/..\/img\/default_defi.png"
         },
         {
-          "url": "rtgrgrg"
+          "url": "..\/..\/img\/default_defi.png"
         }
       ]
     },
@@ -66,10 +63,10 @@
       "title": "Scan",
       "list": [
         {
-          "url": "aaaaa"
+          "url": "..\/..\/img\/default_defi.png"
         },
         {
-          "url": "bbbbb"
+          "url": "..\/..\/img\/default_defi.png"
         }
       ]
     }
@@ -79,7 +76,7 @@
       "title": "Skate",
       "list": [
         {
-          "url": "..\/..\/video\/loan_max_skate.MP4"
+          "url": "..\/..\/img\/default_defi.png"
         }
       ]
     }
