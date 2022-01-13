@@ -4,40 +4,54 @@
     <link href="Realisations.css" rel="stylesheet">
     <title>DidIt</title>
     <meta charset="utf-8">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.0/css/lightgallery.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#lightgallery').lightGallery();
+        });
+    </script>
+    <script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1556817331/lightgallery-all.min.js"></script>
 </head>
 
 <?php include("../header/header.html") ?>
 
 <body>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
-    <div class="lightbox-gallery">
-        <div style="max-width: 3000px !important;" class="container">
-            <div class="intro">
-                <h2 class="text-center"><?php echo $_GET["challenge"] ?></h2>
-                <p class="text-center"><?php echo $_GET["name"] ?></p>
-            </div>
+    <div class="page-content page-container" id="page-content">
+        <div style="padding: 20px !important;" class="padding">
+            <div style="max-width: 3000px !important;" class="row container d-flex justify-content-center">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                        <h2 class="text-center"><?php echo $_GET["challenge"] ?></h2>
+                        <p class="text-center"><?php echo $_GET["name"] ?></p>
+                        <hr class="mt-2 mb-5">
 
-            <hr class="mt-2 mb-5">
-
-            <div class="row photos">
-
-        <?php
-        $ressource = fopen('Realisations.json', 'r');
-        $content= fread($ressource, filesize('Realisations.json'));
-        $values=json_decode($content, true);
+                            <div id="lightgallery" class="row lightGallery">
+                                <?php
+                                $ressource = fopen('Realisations.json', 'r');
+                                $content= fread($ressource, filesize('Realisations.json'));
+                                $values=json_decode($content, true);
 
 
-        foreach ($values[$_GET["community"]] as &$value) {
-            if ($value["title"] == $_GET["challenge"]) {
-                foreach ($value["list"] as &$url) { ?>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="<?php echo $url["url"] ?>" data-lightbox="photos"><img class="img-fluid" src="<?php echo $url["url"] ?>"></a></div>
-                <?php
-                }
-            }
-        }
-        ?>
+                                foreach ($values[$_GET["community"]] as &$value) {
+                                    if ($value["title"] == $_GET["challenge"]) {
+                                        foreach ($value["list"] as &$url) { ?>
+                                <a href="<?php echo $url["url"] ?>" class="image-tile" data-abc="true">
+                                    <img src="<?php echo $url["url"] ?>" alt="image small">
+                                    <div class="demo-gallery-poster">
+                                        <!--<img src="http://www.urbanui.com/fily/template/images/lightbox/play-button.png" alt="image">-->
+                                    </div>
+                                </a>
+                                        <?php
+                                        }
+                                    }
+                                }
+                                ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
