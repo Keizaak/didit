@@ -25,6 +25,13 @@
                         <hr class="mt-2 mb-5">
 
                             <div id="lightgallery" class="row lightGallery">
+
+                                <div class="image-tile d-block mb-4 h-100">
+                                    <iframe class="col" src="../../video/loan_max_skate.MP4" alt="image small" style="width: 100%;"></iframe>
+                                    <div class="demo-gallery-poster">
+                                        <!--<img src="http://www.urbanui.com/fily/template/images/lightbox/play-button.png" alt="image">-->
+                                    </div>
+                                </div>
                                 <?php
                                 $ressource = fopen('Realisations.json', 'r');
                                 $content= fread($ressource, filesize('Realisations.json'));
