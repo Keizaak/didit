@@ -3,16 +3,18 @@
 }
 
 #title_new_challenge {
-    color: #ffc600
+    color: #ffc600;
+    font-size: 60px;
 }
 
-.btn.btn-circle {
+.btn-primary {
     color: #140067;
     background-color: #ffc600;
     border-color: #ffc600;
+    font-size: 25px;
 }
 
-.btn-circle:checked {
+.btn-check:checked + .btn-primary{
     color: #ffc600;
     background-color: #140067;
     border-color: #140067;

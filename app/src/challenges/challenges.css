@@ -1,10 +1,38 @@
+#container {
+    margin-top: 5%;
+}
+
+#box_challenge {
+    overflow-y: scroll;
+    background-color: #ffc600;
+    padding: 1%;
+}
+
 #plus_button {
-    color: #140067; !important;
-    background-color: #ffc600; !important;
-    border-color: #ffc600; !important;
-    font-size: 100px;
+    background-color: #ffc600;
+    border-color: #ffc600;
     height: 150px;
     width: 150px;
     border-radius: 50%;
     margin-top: 10%;
 }
+
+#plus_icon {
+    color: #140067;
+    font-size: 100px;
+    margin-top: 10%;
+}
+
+p {
+    font-size: 25px;
+}
+
+a {
+    color: #140067;
+}
+
+i {
+    color: #140067;
+    font-size: 35px;
+}
+

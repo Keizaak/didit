@@ -1,52 +1,69 @@
+<?php include("../header/header.html") ?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <link href="challenges.css" rel="stylesheet">
     <title>DidIt</title>
 </head>
 
-<?php include("../header/header.html") ?>
-
 <body>
-    <div style="overflow-y: scroll;">
-        <?php
-        $ressource = fopen('challenges.json', 'r');
-        $content= fread($ressource, filesize('challenges.json'));
-        $values=json_decode($content, true);
 
-        
-        foreach ($values[$_GET["community"]] as &$value) {
-            echo "<div style=\"background-color: #ffc600; margin-bottom: 15px; \"><table style='margin-left: 20px; margin-right: 20px;'><tr>";
-            echo "<td style='width: 400px;'><img style='border-radius: 50% !important; height: 150px !important; width: 150px !important; margin-left: 15px; margin-top: 15px;' class='img rounded custom-title-didit' src='".$value['image_url']."'></td>";
-            echo "<td><a href=../realisations/Realisations.php?challenge=".$value['title']."&community=".$_GET["community"]."&name=".$_GET["name"]." style='text-decoration : None;'><div style='font-weight: bold; margin-top: 20px; margin-bottom: 40px;'>" . $value['title'] . "</div></a></td><td><div style='color: red !important;'>";
-            switch ($value['difficult']) {
-                case 1:
-                    echo "★☆☆";
-                    break;
-                case 2:
-                    echo "★★☆";
-                    break;
+<div class="container-fluid" id="container">
+    <?php
+    $file = file_get_contents("challenges.json");
+    $values = json_decode($file, true);
 
-                case 3:
-                    echo "★★★";
-                    break;
-                default:
-                    echo "☆☆☆";
-                    break;
-            }
-            echo "</div></td></tr>";
+    foreach ($values[$_GET["community"]] as $value) {?>
 
-            echo "<tr><td colspan=\"2\">" . $value['description'] . "</td></tr></table></div>";
-        }
+    <div class="container-fluid" id="box_challenge">
+        <div class="row">
+            <div class="col">
+                <img class='img rounded text-center custom-title-didit' style='border-radius: 50% !important; height: 150px !important; width: 150px !important; margin-left: 15px; margin-top: 15px;' src=<?php echo $value["image_url"]?>>
+            </div>
+            <div class="col text-center">
+                <a href="../realisations/Realisations.php?challenge=<?php echo $value['title']?>&community=<?php echo $_GET["community"]?>&name=<?php echo $_GET["name"] ?>" style="text-decoration: None"><?php echo $value["title"] ?></a>
+            </div>
 
-        ?>
+            <div class="col"></div>
+
+            <div class="col">
+                <?php
+                switch ($value['difficult']) {
+                    case 1:
+                        echo "<i class='fas fa-star'></i><i class='far fa-star'></i><i class='far fa-star'></i>";
+                        break;
+                    case 2:
+                        echo "<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='far fa-star'></i>";
+                        break;
+
+                    case 3:
+                        echo "<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i>";
+                        break;
+                    default:
+                        echo "<i class='far fa-star'></i><i class='far fa-star'></i><i class='far fa-star'></i>";
+                        break;
+                }
+                ?>
+            </div>
+        </div>
+
+        <div class="row">
+            <p><?php echo $value['description'] ?></p>
+        </div>
     </div>
+    <br>
+
+    <?php
+    } ?>
+</div>
 
 <footer class="bg-transparent">
     <div class="container text-center">
-        <a id="plus_button" class="btn btn-warning btn-lg" role="button" href="add_challenge.php?community=<?php echo $_GET["community"]?>">
-            <i class="fa fa-plus fa-align-center"></i>
+        <a id="plus_button" class="btn btn-warning btn-lg" role="button"
+           href="add_challenge.php?community=<?php echo $_GET["community"] ?>">
+            <i class="fas fa-plus fa-align-center" id="plus_icon"></i>
         </a>
     </div>
 </footer>

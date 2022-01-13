@@ -1,3 +1,5 @@
+<?php include("../header/header.html") ?>
+
 <?php
 if (isset($_POST["title"]) && isset($_POST["description"]) && isset($_POST["difficulty"])) {
    $file = file_get_contents("Challenges.json");
@@ -18,7 +20,7 @@ if (isset($_POST["title"]) && isset($_POST["description"]) && isset($_POST["diff
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <link href="add_challenge.css" rel="stylesheet">
 
@@ -28,18 +30,16 @@ if (isset($_POST["title"]) && isset($_POST["description"]) && isset($_POST["diff
 
 <body>
 
-<?php include("../header/header.html") ?>
-
 <div class="container">
     <form id="form" action="" method="post">
         <div class="row">
-            <h3 class="form-title text-center" id="title_new_challenge">Add a new challenge</h3>
+            <h3 class="form-title text-center" id="title_new_challenge">Ajoutez un nouveau défi</h3>
         </div>
 
         <div id="form_content">
             <div class="row">
                 <div class="mb-3">
-                    <label class="form-label" for="title">Title <span style="color: red">*</span></label>
+                    <label class="form-label" for="title">Titre <span style="color: red">*</span></label>
                     <input type="text" class="form-control" name="title" id="title" required>
                 </div>
             </div>
@@ -53,7 +53,7 @@ if (isset($_POST["title"]) && isset($_POST["description"]) && isset($_POST["diff
 
             <div class="row">
                 <div class="col">
-                    <label class="form-label">Difficulty</label>
+                    <label class="form-label">Difficulté</label>
                 </div>
             </div>
 
@@ -61,17 +61,23 @@ if (isset($_POST["title"]) && isset($_POST["description"]) && isset($_POST["diff
                 <div class="btn-group text-center" role="group" id="difficulty_buttons">
                     <div class="col">
                         <input type="radio" class="btn-check" name="difficulty" id="easy" value=1 autocomplete="off" checked>
-                        <label class="btn btn-outline-primary" for="easy">Easy</label>
+                        <label class="btn btn-primary" for="easy" id="easy_button">
+                            <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                        </label>
                     </div>
 
                     <div class="col">
                         <input type="radio" class="btn-check" name="difficulty" id="medium" value=2 autocomplete="off">
-                        <label class="btn btn-outline-primary" for="medium">Medium</label>
+                        <label class="btn btn-primary" for="medium" id="medium_button">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                        </label>
                     </div>
 
                     <div class="col">
                         <input type="radio" class="btn-check" name="difficulty" id="hard" value=3 autocomplete="off">
-                        <label class="btn btn-outline-primary" for="hard">Hard</label>
+                        <label class="btn btn-primary" for="hard" id="hard_button">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </label>
                     </div>
                 </div>
             </div>
@@ -89,7 +95,7 @@ if (isset($_POST["title"]) && isset($_POST["description"]) && isset($_POST["diff
             <div class="col"></div>
 
             <div class="col">
-                <button type="submit" class="btn btn-primary btn-lg">Create</button>
+                <button type="submit" class="btn btn-primary btn-lg" id="create_button">Create</button>
             </div>
 
             <div class="col"></div>
