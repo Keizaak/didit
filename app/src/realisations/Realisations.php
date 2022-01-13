@@ -10,6 +10,15 @@
 
 <body>
     <div style="overflow-y: scroll;">
+
+        <div style="max-width: 3000px !important;" class="container">
+
+            <h1 class="fw-light text-center text-lg-start mt-4 mb-0"><?php echo $_GET["name"]." / ".$_GET["challenge"] ?></h1>
+
+            <hr class="mt-2 mb-5">
+
+            <div class="row text-center text-lg-start">
+
         <?php
         $ressource = fopen('Realisations.json', 'r');
         $content= fread($ressource, filesize('Realisations.json'));
@@ -18,16 +27,22 @@
 
         foreach ($values[$_GET["community"]] as &$value) {
             if ($value["title"] == $_GET["challenge"]) {
-                echo "<table>";
-                foreach ($value["list"] as &$url) {
-                    echo "<tr><td><img style='border-radius: 50% !important; height: 250px !important; width: 250px !important;' class='img rounded custom-title-didit' src='".$url["url"]."'></td></tr>";
+                foreach ($value["list"] as &$url) { ?>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="d-block mb-4 h-100">
+                            <img class="img-fluid img-thumbnail" src="<?php echo $url["url"] ?>" alt="">
+                        </a>
+                    </div>
+                <?php
                 }
-                echo "</table>";
             }
         }
-
         ?>
+            </div>
+
+        </div>
     </div>
+
 </body>
 
 </html>

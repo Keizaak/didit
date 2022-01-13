@@ -23,7 +23,7 @@
                 <img class='img rounded text-center custom-title-didit' style='border-radius: 50% !important; height: 150px !important; width: 150px !important; margin-left: 15px; margin-top: 15px;' src=<?php echo $value["image_url"]?>>
             </div>
             <div class="col text-center">
-                <a href="../realisations/Realisations.php?challenge=<?php echo $value['title']?>&community=<?php echo $_GET["community"]?>" style="text-decoration: None"><?php echo $value["title"] ?></a>
+                <a href="../realisations/Realisations.php?challenge=<?php echo $value['title']?>&community=<?php echo $_GET["community"]?>&name=<?php echo $_GET["name"] ?>" style="text-decoration: None"><?php echo $value["title"] ?></a>
             </div>
 
             <div class="col"></div>
