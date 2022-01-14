@@ -1,51 +1,60 @@
 {
-  "communities":[
+  "communities": [
     {
       "title": "pass_tafarisme",
       "name":"Pass'Tafarisme",
       "description":"Si tu es fan de pâtes, ta place est ici !",
-      "image_url":  "../../img/tafarism.png"},
+      "image_url":  "../../img/tafarism.png",
+      "link": true
+    },
     {
       "title":"love_pass",
       "name":"Love Pass",
       "description":"Si tu redoutes les MST, tu trouveras toutes les infos que tu cherches !",
-      "image_url":  "../../img/love.png"
+      "image_url":  "../../img/love.png",
+      "link": true
     },
     {
       "title":"dome",
       "name":"Dôme",
       "description":"Le Dôme est un espace collaboratif d'innovation ouvert à tous les publics. Il propose des actions de culture scientifique et technique autour de projets réels de recherche et d'innovation.",
-      "image_url":  "../../img/logo_dome.png"
+      "image_url":  "../../img/logo_dome.png",
+      "link": true
     },
     {
       "title":"course_de_cochons_dinde",
       "name":"Course de cochons d'Inde",
       "description":"Cette communauté est faite pour les heureux détenteurs de cochons d'Inde. En effet, vous pourrez mettre en compétition vos petits compagnons dans des courses folles.",
-      "image_url":  "../../img/logo-cochondinde.png"
+      "image_url":  "../../img/logo-cochondinde.png",
+      "link": false
     },
     {
       "title":"musical_dance",
       "name":"Musical dance",
       "description":"Venez exprimer votre art avec des personnes qui sauront l'apprécier.",
-      "image_url":  "../../img/logo-dance.png"
+      "image_url":  "../../img/logo-dance.png",
+      "link": true
     },
     {
       "title":"lego",
       "name":"Lego",
       "description":"Dans cette communauté, laissez votre créativité s'exprimer.",
-      "image_url":  "../../img/logo-lego.png"
+      "image_url":  "../../img/logo-lego.png",
+      "link": false
     },
     {
       "title":"dumb_cat_challenges",
       "name":"Dumb Cat Challenges",
       "description":"Ton chat est bizarre ? Filme ses exploits et poste-les !",
-      "image_url":  "../../img/logo-chatmi-thon.png"
+      "image_url":  "../../img/logo-chatmi-thon.png",
+      "link": false
     },
     {
       "title":"street_workout",
       "name":"Street Workout",
       "description":"Surpassez-vous en réalisant les différents défis de la communauté et partagez vos performances.",
-      "image_url":  "../../img/logo-workout.png"
+      "image_url":  "../../img/logo-workout.png",
+      "link": true
     }
   ]
 }
