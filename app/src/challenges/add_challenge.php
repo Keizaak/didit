@@ -15,8 +15,11 @@ if (isset($_POST["title"]) && isset($_POST["description"]) && isset($_POST["diff
        $file_path = "../../img/" . basename($_FILES["photo"]["name"]);
        move_uploaded_file($_FILES["photo"]["tmp_name"], $file_path);
        $new_challenge["image_url"] = $file_path;
+       if (empty(basename($_FILES["photo"]["name"]))) {
+           $new_challenge["image_url"] = "../../img/default_defi.png";
+       }
    } else {
-       $new_challenge["image_url"] = "";
+       $new_challenge["image_url"] = "../../img/default_defi.png";
    }
 
    $array[$_GET["community"]][] = $new_challenge;

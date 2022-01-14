@@ -26,8 +26,9 @@ header {
 .custom-title-didit {
     height: 120px;
     width: 300px;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
-
 
 .navbar-toggler {
     border: none;
@@ -39,5 +40,3 @@ header {
     height: 50px;
     width: 50px;
 }
-
-
