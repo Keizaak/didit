@@ -1,3 +1,7 @@
+#container_form {
+    overflow-y: scroll;
+}
+
 #form_content {
     text-align: left;
 }

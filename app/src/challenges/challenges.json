@@ -1,28 +1,28 @@
 {
-  "pass_Tafarisme":[
+  "pass_tafarisme":[
     {
       "title":"Achat",
-      "description":"Pour ce défi, vous devez acheter plusieurs kilos de spaghettis tout en profitant des reductions offertes par le pass'Tafarisme.",
+      "description":"Pour ce défi, vous devez acheter plusieurs kilos de spaghettis tout en profitant des réductions offertes par le Pass'Tafarisme.",
       "difficult": "1",
       "image_url": "../../img/default_defi.png"
     },
     {
       "title":"Cuisine",
-      "description":"Pour ce défi, vous devez cuisiner un plat à base de pâtes. Ce plat ce doit d'être original.",
+      "description":"Pour ce défi, vous devez cuisiner un plat à base de pâtes. Ce plat se doit d'être original.",
       "difficult": "2",
       "image_url":  "../../img/cuisine.png"
     },
     {
       "title":"Grades",
-      "description":"Adorateurs des pâtes, pour ce défi exceptionnel vous devez atteindre le grade de linguine avec votre pass'Tafarisme. Ce défi n'est pas à la portée de tous...",
+      "description":"Adorateurs des pâtes, pour ce défi exceptionnel vous devez atteindre le grade de linguine avec votre Pass'Tafarisme. Ce défi n'est pas à la portée de tous...",
       "difficult": "3",
       "image_url":  "../../img/grade.png"
     }
   ],
   "love_pass": [
     {
-      "title":"Depistage",
-      "description":"Pour ce défi, c'est très simple : vous devez vous faire dépister pour obtenir votre love pass !",
+      "title":"Dépistage",
+      "description":"Pour ce défi, c'est très simple : vous devez vous faire dépister pour obtenir votre Love Pass !",
       "difficult": "1",
       "image_url": "../../img/default_defi.png"
     },
@@ -39,12 +39,17 @@
       "image_url": "../../img/default_defi.png"
     }
   ],
-  "Dome": [
+  "dome": [
     {
-      "title":"skate",
+      "title":"Skate",
       "description":"Réalisation d'une performance en skateboard devant le Dôme !",
       "difficult": "1",
       "image_url": "../../img/default_defi.png"
     }
-  ]
+  ],
+  "course_de_cochons_dinde": [],
+  "musical_dance": [],
+  "lego": [],
+  "dumb_cat_challenges": [],
+  "street_workout": []
 }

@@ -1,0 +1,26 @@
+#add_button {
+    font-size: 35px !important;
+}
+
+#photo {
+    font-size: 35px;
+}
+
+.btn-primary {
+    color: #140067;
+    background-color: #ffc600;
+    border-color: #ffc600;
+    border-radius: 10%;
+    font-size: 25px;
+}
+
+.btn-check:checked + .btn-primary{
+    color: #ffc600;
+    background-color: #140067;
+    border-color: #140067;
+}
+
+h3 {
+    color: #ffc600;
+    font-size: 60px;
+}

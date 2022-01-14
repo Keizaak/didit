@@ -6,6 +6,12 @@
     <meta charset="UTF-8">
     <link href="challenges.css" rel="stylesheet">
     <title>DidIt</title>
+
+    <script>
+        window.onload = function() {
+            window.scrollTo(0, 0);
+        }
+    </script>
 </head>
 
 <body>
@@ -16,43 +22,44 @@
     $values = json_decode($file, true);
 
     foreach ($values[$_GET["community"]] as $value) {?>
+        <a href="../realisations/realisations.php?challenge=<?php echo $value['title']?>&community=<?php echo $_GET["community"]?>&name=<?php echo $value["title"] ?>">
+            <div class="container-fluid" id="box_challenge">
+                <div class="row">
+                    <div class="col">
+                        <img class='img rounded text-center custom-title-didit' style='border-radius: 50% !important; height: 150px !important; width: 150px !important; margin-left: 15px; margin-top: 15px;' src=<?php echo $value["image_url"]?>>
+                    </div>
+                    <div class="col text-center">
+                        <h2><b><?php echo $value["title"] ?></b></h2>
+                    </div>
 
-    <div class="container-fluid" id="box_challenge">
-        <div class="row">
-            <div class="col">
-                <img class='img rounded text-center custom-title-didit' style='border-radius: 50% !important; height: 150px !important; width: 150px !important; margin-left: 15px; margin-top: 15px;' src=<?php echo $value["image_url"]?>>
+                    <div class="col"></div>
+
+                    <div class="col">
+                        <?php
+                        switch ($value['difficult']) {
+                            case 1:
+                                echo "<i class='fas fa-star'></i><i class='far fa-star'></i><i class='far fa-star'></i>";
+                                break;
+                            case 2:
+                                echo "<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='far fa-star'></i>";
+                                break;
+
+                            case 3:
+                                echo "<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i>";
+                                break;
+                            default:
+                                echo "<i class='far fa-star'></i><i class='far fa-star'></i><i class='far fa-star'></i>";
+                                break;
+                        }
+                        ?>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p><?php echo $value['description'] ?></p>
+                </div>
             </div>
-            <div class="col text-center">
-                <a href="../realisations/Realisations.php?challenge=<?php echo $value['title']?>&community=<?php echo $_GET["community"]?>&name=<?php echo $_GET["name"] ?>" style="text-decoration: None"><?php echo $value["title"] ?></a>
-            </div>
-
-            <div class="col"></div>
-
-            <div class="col">
-                <?php
-                switch ($value['difficult']) {
-                    case 1:
-                        echo "<i class='fas fa-star'></i><i class='far fa-star'></i><i class='far fa-star'></i>";
-                        break;
-                    case 2:
-                        echo "<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='far fa-star'></i>";
-                        break;
-
-                    case 3:
-                        echo "<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i>";
-                        break;
-                    default:
-                        echo "<i class='far fa-star'></i><i class='far fa-star'></i><i class='far fa-star'></i>";
-                        break;
-                }
-                ?>
-            </div>
-        </div>
-
-        <div class="row">
-            <p><?php echo $value['description'] ?></p>
-        </div>
-    </div>
+        </a>
     <br>
 
     <?php
